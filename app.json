@@ -4,17 +4,21 @@
     "slug": "MissionX",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/one-mission-ios.icon",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/one-mission-ios.icon",
+      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true,
-      "icon": "./assets/one-mission-ios.icon"
+      "icon": "./assets/one-mission-ios.icon",
+      "bundleIdentifier": "dev.omerpeled.MissionX",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +30,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ead1ab9-73c0-44ab-bf5c-c46ee16d13c9"
+      }
     }
   }
 }
